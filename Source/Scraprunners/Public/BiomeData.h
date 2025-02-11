@@ -19,8 +19,8 @@ struct FBiomeData
 	TArray<FVector2D> UVs; //Also may be put in QuadTreeNode
 	TArray<int32> Indices;
 	int32 Resolution;
-	int32 Length;
-	int32 Width;
+	int32 LengthAndWidth;
 	float HeightScalar;
 	float SizeScalar;
+	float TilingScalar;
 };

@@ -11,10 +11,14 @@ DesertBiome::~DesertBiome()
 {
 }
 
-FBiomeData DesertBiome::GetBiomeData()
+FBiomeData DesertBiome::GetBiomeData() const
 {
 	FBiomeData BiomeData;
-	//todo put in numbers;
+	BiomeData.Resolution = Resolution;
+	BiomeData.LengthAndWidth = LengthAndWidth;
+	BiomeData.HeightScalar = HeightScalar;
+	BiomeData.SizeScalar = SizeScalar;
+	BiomeData.TilingScalar = TilingScalar;
 	return BiomeData;
 }
 
